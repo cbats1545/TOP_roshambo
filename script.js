@@ -24,7 +24,16 @@ const playRound = (playerSelection = "ROCK", computerSelection = "SCISSORS") => 
     let computer = computerPlay();
     // compare answers
     // if rock beats scissors
-    // if scissors beats paper
-    // if paper beats rock
-    return player;
+    if (player === "ROCK" && computer === "SCISSORS") {
+        return "You win. Rock smashes scissors.";
+    } else if (player === "SCISSORS" && computer === "PAPER") {
+        // if scissors beats paper
+        return "You win. Scissors cut through paper.";
+    } else if (player === "PAPER" && computer === "ROCK") {
+        // if paper beats rock
+        return "You win. "
+    }
+    
 }
+
+I'm not so sure I should've went the route of if/else; probably a switch statement situation
