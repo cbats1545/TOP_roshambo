@@ -19,31 +19,24 @@ const playRound = (playerSelection, computerSelection) => {
     playerSelection = player.toUpperCase();
     let computer = computerPlay();
     computerSelection = computer.toUpperCase();
-    let results;
-    switch (results) {
-        case (computerSelection === "ROCK" && playerSelection === "PAPER"):
+    console.log(`Computer plays: ${computerSelection}`);
+    if (computerSelection === "ROCK" && playerSelection === "PAPER") {
             return "You win. Paper covers rock.";
-            break;
-        case (computerSelection === "PAPER" && playerSelection === "SCISSORS"):
+    } else if (computerSelection === "PAPER" && playerSelection === "SCISSORS") {
             return "You win. Scissors cut paper.";
-            break;
-        case (computerSelection === "SCISSORS" && playerSelection === "ROCK"):
+    } else if (computerSelection === "SCISSORS" && playerSelection === "ROCK"){
             return "You win. Rock breaks scissors.";
-            break;
-        case (playerSelection === "ROCK" && computerSelection === "PAPER"):
+    } else if (playerSelection === "ROCK" && computerSelection === "PAPER") {
             return "You lose. Paper covers rock.";
-            break;
-        case (playerSelection === "PAPER" && computerSelection === "SCISSORS"):
+    } else if (playerSelection === "PAPER" && computerSelection === "SCISSORS") {
             return "You lose. Scissors cut paper.";
-            break;
-        case (playerSelection === "SCISSORS" && computerSelection === "ROCK"):
+    } else if (playerSelection === "SCISSORS" && computerSelection === "ROCK") {
             return "You lose. Rock breaks scissors.";
-            break;
-        default: 
-            return "It's a tie!";
     }
-    console.log(results);
-}
+    return "It's a tie!";
+    }
+    
 
 // Don't forgot to call the function!!
-playRound();
+let results = playRound();
+console.log(results);
