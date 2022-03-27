@@ -1,6 +1,8 @@
 # TOP_roshambo
  Project: Rock Paper Scissors from TOP Foundations curriculum
 
+ ## This ain't nothin' fancy. Just trying to get through the foundations curriculum while focusing on what the lesson/section topic.
+
 computerPlay()
     function
         serves as computer player
