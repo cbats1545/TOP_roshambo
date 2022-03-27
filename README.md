@@ -14,3 +14,11 @@ playRound()
         play a single round of the game
         two param: playerSelection, computerSelection
         
+game()
+    function
+        takes the playRound function and loops five times
+
+results()
+    function
+        need to display results of the five matches vs the computer
+        thinking of starting a tally and then whichever is higher than half(3) will be declared the winner

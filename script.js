@@ -42,7 +42,8 @@ const playRound = (playerSelection, computerSelection) => {
             defeat++;
             return "You lose. Rock breaks scissors.";
     }
-    return "It's a tie!";
+    return "It's a tie! Please play again...";
+    playRound();
     }
     
 
