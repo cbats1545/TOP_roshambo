@@ -75,8 +75,8 @@ const results = () => {
         alert( `You lose...`);
     }
 }
-console.log(victory);
-console.log(defeat);
-console.log(neither);
+console.log(`Nbr of Victories: ${victory}`);
+console.log(`Nbr of Defeats: ${defeat}`);
+console.log(`Nbr of Same Answers: ${neither}`);
 let ending = results();
 console.log(ending);
