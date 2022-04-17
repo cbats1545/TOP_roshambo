@@ -1,0 +1,28 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100vh;
+    height: auto;
+    padding: 0;
+    border: 0;
+    margin: auto;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: small;
+}
+
+.output {
+    
+}
+
+

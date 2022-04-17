@@ -1,3 +1,10 @@
+var realConsoleLog = console.log;
+        console.log = function () {
+            var message = [].join.call(arguments, " ");
+            $(".output").text(message);
+            realConsoleLog.apply(console, arguments);
+        };
+
 // function to serve as the computer player
 // using random number choice and assigning ranges to choice
 
